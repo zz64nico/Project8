@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <TextView
+                    android:padding="12dp"
+                    android:textSize="14sp"
+                    android:id="@+id/tv_name"
+                    android:hint="fed53946@gmail.com"
+                    android:textColor="@color/color_43496a"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+                <EditText
+                    android:padding="12dp"
+                    android:background="@color/white"
+                    android:hint="please input"
+                    android:id="@+id/et_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="@color/color_333333"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:onClick="feecback"
+                    android:text="feedback"
+                    android:textColor="@color/white"
+                    app:cornerRadius="15sp"
+                    app:iconSize="20dp"
+                    app:iconTint="@color/color_333333"
+                    app:strokeColor="@color/color_333333"
+                    app:strokeWidth="2dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
